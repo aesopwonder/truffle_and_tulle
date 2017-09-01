@@ -1,0 +1,25 @@
+@media screen and (min-width: 1010px) {
+  .navbar-nav > li {
+      display: inline-block;
+      float:none;
+      padding-left:80px;
+      padding-right:80px;
+  }
+}
+@media screen and (min-width: 767px) and (max-width: 1010px){
+  .navbar-nav > li {
+      display: inline-block;
+      float:none;
+      padding-left:30px;
+      padding-right:30px;
+  }
+  @media screen and (max-width: 766px){
+    .navbar-nav {
+    float:none;
+    margin:0 auto;
+    display: block;
+    height: 1000px;
+    text-align: center;
+}
+  }
+}

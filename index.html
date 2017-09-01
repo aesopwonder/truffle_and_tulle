@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Truffle and Tulle</title>
+  <meta name="description" content="Truffle and Tulle">
+  <meta name="author" content="Andrew Nguyen">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <!--Bootstrap style overrides-->
+  <link rel="stylesheet" href="navbar_override.css">
+  <!--Responsive style-->
+  <link rel="stylesheet" href="responsive.css">
+  <!--San serif font -->
+  <link rel="stylesheet" href="san_serif.css">
+  <style>
+    /* Remove the navbar's default margin-bottom and rounded borders */
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+    .row.content {height: 450px}
+
+    /* Set gray background color and 100% height */
+    .sidenav {
+      padding-top: 20px;
+      background-color: #ffffff;
+      height: 100%;
+    }
+
+    /* Set black background color, white text and some padding */
+    footer {
+      height: 102vh;
+      background-color: #f2ccc3;
+      color: #999999;
+    }
+
+    /* On small screens, set height to 'auto' for sidenav and grid */
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+      .row.content {height:auto;}
+    }
+    /* Custom Bootstrap Css*/
+    .navbar-nav {
+    float:none;
+    margin:0 auto;
+    display: block;
+    height: 100px;
+    text-align: center;
+}
+  /*Center content*/
+  .outter_content{
+   background-color: #f2ccc3;
+    background-size: 100%;
+  }
+  .content {
+    max-width: 1100px;
+    margin: auto;
+    background: white;
+}
+/*Within Footer*/
+ .within_footer{
+   border-top: 1px solid #999999;
+   border-color: #999999;
+   margin: 90px;
+ }
+ /*nav affix*/
+ #nav.affix {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+.nav_affix_custom{
+  max-width: 1100px;
+  margin: auto;
+  background: white;
+  z-index: 1000;
+}
+/*Custom Header CSS*/
+#header .well {
+    height:86vh;
+    background: #f2ccc3;
+    border:none;
+}
+.nav-wrapper
+{
+    min-height:100px;
+}
+.well{
+  margin: 0 auto;
+  padding: 0 auto;
+}
+@media screen and (max-width: 766px){
+  .navbar-nav {
+  height:auto !important;
+}
+#header .well {
+    height:92vh;
+    background: #f2ccc3;
+    border:none;
+}
+}
+
+
+  </style>
+</head>
+<body class=outter_content>
+<div class="content">
+  <!-- Custom Homepage Header -->
+  <div class="container-fluid" id="header">
+      <div class="row">
+          <div class="span12">
+              <div class="well">
+
+              </div>
+          </div>
+      </div>
+  </div>
+
+<!--Navbar affix container -->
+<div class ="nav-wrapper">
+  <div class="nav_affix_custom" id="nav" >
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Projects</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  </div>
+</div><!--End navbar affix -->
+
+<div class="container-fluid text-center" style="height:1000px;">
+  <div class="row content">
+    <div class="col-sm-2 sidenav">
+      <p><a href="#">Link</a></p>
+      <p><a href="#">Link</a></p>
+      <p><a href="#">Link</a></p>
+    </div>
+    <div class="col-sm-8 text-left">
+      <h1>Welcome</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      <hr>
+      <h3>Test</h3>
+      <p>Lorem ipsum...</p>
+    </div>
+    <div class="col-sm-2 sidenav">
+      <div class="well">
+        <p>ADS</p>
+      </div>
+      <div class="well">
+        <p>ADS</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer class="container-fluid text-center">
+  <div class="within_footer">
+    <p>Footer Text</p>
+  </div>
+</footer>
+</div><!--End of Content-->
+<script src="js/affix.js"></script>
+</body>
+</html>
