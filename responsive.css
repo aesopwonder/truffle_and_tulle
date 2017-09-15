@@ -2,24 +2,46 @@
   .navbar-nav > li {
       display: inline-block;
       float:none;
-      padding-left:80px;
-      padding-right:80px;
+      padding-left:20px;
+      padding-right:20px;
   }
 }
 @media screen and (min-width: 767px) and (max-width: 1010px){
   .navbar-nav > li {
       display: inline-block;
       float:none;
-      padding-left:30px;
-      padding-right:30px;
+      font-size: 15px;
+      padding-left:10px;
+      padding-right:10px;
   }
-  @media screen and (max-width: 766px){
-    .navbar-nav {
-    float:none;
-    margin:0 auto;
-    display: block;
-    height: 1000px;
-    text-align: center;
 }
-  }
+@media screen and (max-width: 766px){
+    .navbar-nav {
+      height:auto !important;
+    }
+    #header .well {
+      height:92vh;
+      background: #f2ccc3;
+      border:none;
+    }
+    .sidenav {
+      height: auto;
+      padding: 15px;
+    }
+    .row.content {
+      height:auto;
+    }
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+      color: #000000;
+    }
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+      color: #f2ccc3;
+    }
+    .navbar-default .navbar-nav .open .dropdown-menu > .active > a,
+    .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
+    .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
+      color: #f2ccc3;
+      background-color: #ffffff;
+    }
 }

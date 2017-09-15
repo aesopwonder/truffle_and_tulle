@@ -1,0 +1,114 @@
+h1 {
+	font-family: tahoma;
+	font-size: 24px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 500;
+	line-height: 26.4px;
+}
+h3 {
+	font-family: "tahoma";
+	font-size: 14px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 500;
+	line-height: 15.4px;
+}
+p {
+	font-family: "tahoma";
+	font-size: 14px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 400;
+	line-height: 20px;
+}
+blockquote {
+	font-family: "tahoma";
+	font-size: 21px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 400;
+	line-height: 30px;
+}
+pre {
+	font-family: "tahoma";
+	font-size: 13px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 400;
+	line-height: 18.5714px;
+}
+li{
+	font-family: "Georgia";
+	font-size: 15px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: normal;
+	letter-spacing: 5px;
+	line-height: 20px;
+}
+.box_text{
+	font-family: "Verdana";
+	font-style: normal;
+	font-variant:normal;
+	font-weight: 600;
+	line-height: 100px;
+	font-size: 50px;
+	letter-spacing: 15px;
+	color: white;
+	font-variant-caps: small-caps;
+
+}
+#box_1_text{
+	font-size: 100px;
+	font-weight: 700;
+	letter-spacing: 40px;
+	margin-top: -10px;
+	margin-left: 20px;
+}
+
+#box_2_text{
+	font-size: 50px;
+	font-weight: 700;
+	letter-spacing: 20px;
+	margin-top: -5px;
+	margin-left: 10px;
+}
+#box_3_text{
+	font-size: 80px;
+	font-weight: 700;
+	letter-spacing: 20px;
+	margin-top: -10px;
+	margin-left: 10px;
+}
+#box_5_text{
+	font-size: 30px;
+	font-weight: 700;
+	letter-spacing: 15px;
+	margin-top: -2.5px;
+	margin-left: 10px;
+}
+#box_4_text{
+	font-size: 60px;
+	font-weight: 700;
+	letter-spacing: 10px;
+	margin-top: -5px;
+	margin-left: 10px;
+}
+#box_6_text{
+	font-size: 150px;
+	font-weight: 700;
+	letter-spacing: 40px;
+	margin-top: -5px;
+	margin-left: 10px;
+}
+#subscribe_tag{
+	font-family: "Verdana";
+	font-style: normal;
+	font-variant:normal;
+	font-weight: 700;
+	font-size: 20px;
+	letter-spacing: 10px;
+	color: white;
+	font-variant-caps: small-caps;
+}
