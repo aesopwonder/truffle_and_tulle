@@ -2,11 +2,17 @@
 #header .well {
     height:83.5vh;
     background: #f2ccc3;
-    background-image: url(images/header.png);
+    background-image: url(../images/header.png);
     border:none;
     background-size: 80%;
     background-repeat: no-repeat;
     background-position: center;
+}
+a{
+  text-decoration: none;
+}
+a:hover{
+  text-decoration: none;
 }
 .nav-wrapper
 {
@@ -30,11 +36,17 @@
 /***********************************************************/
 /*Add Styles Below Here*/
 .navbar-default{
-  border-bottom: 10px white solid;
+  border-bottom: 1em white solid;
   z-index: 1000;
 }
+#myNavbar li a:hover{
+  color:#c49991;
+}
+#nav.affix{
+  margin:0 auto;
+}
 #tile_1 {
-  background: url(images/home_1.jpg);
+  background: url(../images/home_1.jpg);
   position: relative;
   width: 64%;
   height: 350px;
@@ -47,65 +59,64 @@
 
 #tile_2 {
   position: relative;
-  background: yellow;
+  background: white;
   width: 35%;
   height: 350px;
   margin-bottom: 10px;
   float:right;
-  background-image: url(images/home_2.jpg);
+  background-image: url(../images/home_2.jpg);
   background-size: cover;
   background-position: center;
 }
 
 #tile_3 {
   position: relative;
-  background: pink;
+  background: white;
   width: 33%;
   height: 350px;
   margin-bottom: 10px;
   margin-right: 10px;
   float:left;
-  background-image: url(images/home_3.jpg);
+  background-image: url(../images/home_3.jpg);
   background-size: cover;
   background-position: center;
 }
 
 #tile_4 {
   position: relative;
-  background: red;
+  background: white;
   width: 33%;
   height: 350px;
   margin-bottom: 10px;
   background-position: center;
   float:right;
-  background-image: url(images/home_4.jpg);
+  background-image: url(../images/home_4.jpg);
   background-size: cover;
 
 }
 
 #tile_5 {
   position: relative;
-  background: green;
+  background: white;
   width: 32%;
   height: 350px;
   margin-bottom: 10px;
   margin-right: 10px;
   float:right;
-  background-image: url(images/home_5.jpg);
+  background-image: url(../images/home_5.jpg);
   background-size: cover;
-
   background-position: center;
 
 }
 #tile_6 {
   position: relative;
-  background: blue;
+  background: white;
   width: 100%;
   height: 350px;
   margin-bottom: 10px;
   margin-right: 10px;
   float: left;
-  background-image: url(images/home_6.jpg);
+  background-image: url(../images/home_6.jpg);
   background-size: cover;
   background-position: center;
 
@@ -129,18 +140,84 @@ left: 50%;
 transform: translate(-50%, -50%);
 }
 
+#recent_posts{
+  width:100%;
+  height:150vh;
+  background: #f2ccc3;
+}
+#recent_wrap{
+  width: 95%;
+  height: inherit;
+  margin: 0 auto;
+  position: relative;
+}
+#recent_post_title{
+  font-size: 500%;
+  text-align: center;
+  font-weight: 100;
+  padding-top: 2.5%;
+  color:white;
+}
+#recent_post_title:hover{
+  color:#c49991;
+}
+.post{
+  width: 50%;
+  height: 40%;
+  float: left;
+  padding: 1%;
+  padding-left: .5%;
+  padding-right: .5%;
+  font-size: 130%;
+  text-align: center;
+  line-height: 100%;
+  font-weight: 100;
+  letter-spacing: .2em;
+  position:relative;
+  color:white;
+}
+.post_image:hover{
+  outline: none;
+  border-color: white;
+}
+.post_image{
+  width: 100%;
+  height: 85%;
+  border: solid 5px #c49991;
+}
+.post_title{
+  font-weight: 800;
+  font-variant: small-caps;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+.post_date{
+  font-size: 50%;
+  font-weight: 100;
+}
+.separator{
+  font-size: 80%;
+  color:#c49991;
+}
+.post_tags{
+  font-size: 50%;
+  font-weight: 100;
+}
 #subscribe{
   position: relative;
   width: 100%;
   height: 70px;
+  left:1%;
   margin-top:50px;
 }
 #subscribe_wrapper{
   margin: 0 auto;
+  width: 99%;
+  height: 100%;
   color: white;
 }
 #subscribe_tag{
-  color: black;
+  color: #c49991;
   margin-right: 30px;
   float: left;
 }
@@ -150,13 +227,13 @@ transform: translate(-50%, -50%);
   color: #f2ccc3;
   float: left;
   text-align: center;
-  background: black;
+  background: #c49991;
   border: 2px solid #f2ccc3;
   border: 4px solid #f2ccc3;
 }
 #subscribe_input_1:focus{
   outline: none;
-  border-color: black;
+  border-color: white;
   box-shadow: 0 0 200px white;
 }
 #subscribe_input_2{
@@ -167,18 +244,18 @@ transform: translate(-50%, -50%);
   text-align: center;
   line-height: 30px;
   color: #f2ccc3;
-  background: black;
+  background: #c49991;
   border: 4px solid #f2ccc3;
 }
 #subscribe_input_2:focus{
   outline: none;
-  border-color: black;
+  border-color: white;
   box-shadow: 0 0 200px white;
 }
 #subscribe_input_3{
   margin-left: 30px;
   float: left;
-  width: 160px;
+  width: 180px;
   height: 50px;
   color: white;
   background: #f2ccc3;
@@ -210,13 +287,49 @@ hr.style18:before {
   border-radius: 20px;
 }
 
+#load_more_posts{
+  height: 5%;
+  background: #f2ccc3;
+  border: solid #c49991 .2em;
+  text-align: center;
+  position: absolute;
+    bottom: 0%;
+    left: 0;
+    right: 0;
+}
+#load_more_posts:hover{
+  outline: none;
+  box-shadow: 0 0 3em #c49991;
+}
 
+#load_more_posts_title{
+  margin: 0;
+  letter-spacing: .2em;
+  font-weight: 200;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color:#c49991;
+  font-size: 200%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+}
+.giveMeEllipsis {
+   overflow: hidden;
+   text-overflow: ellipsis;
+   display: -webkit-box;
+   -webkit-box-orient: vertical;
+   -webkit-line-clamp: 1; /* number of lines to show */
+   line-height: 20px;        /* fallback */
+   max-height: 20px;       /* fallback */
+}
 
 /* Set black background color, white text and some padding */
 footer {
   height: 83vh;
   background-color: #f2ccc3;
   color: #999999;
+  overflow: hidden;
 }
 .footer_body >a{
  color:white;
@@ -225,9 +338,9 @@ footer {
 .footer_body >a:link {color: white; text-decoration: none; }
 .footer_body >a:active {color: black; text-decoration: none; }
 .footer_body >a:visited {color: white; text-decoration: none; }
-.footer_body >a:hover {color: black; text-decoration: none; transform: scale(1.5); }
+.footer_body >a:hover {color: #c49991; text-decoration: none; transform: scale(1.5); }
 #footer_subtitle2{
-  color:black;
+  color:#c49991;
 }
 .social_icons{
   margin: 0 auto;
@@ -244,31 +357,31 @@ footer {
   margin-right:2%;
 }
 #social1{
-  background:url(images/social/inst.png);
+  background:url(../images/social/instw.png);
   background-size: 100%;
   background-repeat: no-repeat;
   background-position: center;
 }
 #social2{
-  background-image:url(images/social/face.png);
+  background-image:url(../images/social/facew.png);
   background-size: 100%;
   background-repeat: no-repeat;
   background-position: center;
 }
 #social3{
-  background-image:url(images/social/pint.png);
+  background-image:url(../images/social/pintw.png);
   background-size: 100%;
   background-repeat: no-repeat;
   background-position: center;
 }
 #social4{
-  background-image:url(images/social/yout.png);
+  background-image:url(../images/social/youtw.png);
   background-size: 100%;
   background-repeat: no-repeat;
   background-position: center;
 }
 #social5{
-  background-image:url(images/social/twit.png);
+  background-image:url(../images/social/twitw.png);
   background-size: 100%;
   background-repeat: no-repeat;
   background-position: center;
@@ -281,7 +394,7 @@ footer {
  .within_footer{
    border-top: 1px solid #999999;
    border-color: #999999;
-   margin: 90px;
+   margin: 10px;
  }
 /*****************************************************************************/
  /*Hover effects below*/
